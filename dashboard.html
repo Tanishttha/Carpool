@@ -536,6 +536,42 @@
         .transition-all {
             transition: all 0.3s ease;
         }
+        .alerts-button-container {
+    text-align: center;
+}
+
+.alerts-button-container {
+    text-align: center;
+}
+
+.alerts-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px; /* Increase horizontal padding to make the button wider */
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto; /* Allows button to expand horizontally */
+}
+
+.alerts-button i {
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.alerts-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.alerts-button:focus {
+    outline: none;
+}
+
         .why-carpooling-heading {
     font-size: 3rem;
     color: #ff6347; /* Tomato color */
@@ -684,8 +720,14 @@ footer p:hover {
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
     </div>
-    
-        <div class="emergency-button-container">
+    <div class="alerts-button-container">
+        <button id="alertsButton" class="alerts-button">
+            <i class="fas fa-cloud-sun-rain"></i> <!-- Icon representing weather and traffic -->
+            Alerts
+        </button>
+    </div>
+
+<div class="emergency-button-container">
             <button class="emergency-button" onclick="window.location.href='need.html'">
                 <i class="fas fa-exclamation-triangle emergency-icon"></i>
                 Need Help
@@ -770,6 +812,7 @@ footer p:hover {
         <button class="btn" onclick="window.location.href='offer_ride.html'">Offer a Ride</button>
         <button class="btn" onclick="window.location.href='message_driver.html'">Chat with Rider</button>
     </section>
+
 
     <!-- Why Carpooling Heading -->
     <section class="why-carpooling-section">
@@ -858,12 +901,20 @@ footer p:hover {
         window.location.href = 'find_ride.html';
     }, 3000);  // Adjusted to 4 seconds to match the loading animation duration
 }
+document.getElementById('alertsButton').addEventListener('click', function() {
+            window.location.href = 'traffic.html';  // Redirect to traffic and weather alerts page
+        });
 
     
     </script>
 
 </body>
 </html>
+
+
+
+
+
 
 
 
