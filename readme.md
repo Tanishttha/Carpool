@@ -1,6 +1,6 @@
-<h1 align="center">Carpooling Platform</h1>
+<h1 align="center">YMCA Carpooling Platform</h1>
 <h2 align="center">A Web-Based Ride Sharing and Carpool Management System
-Developed as a 3rd Semester Academic Project<h2>
+<br>Developed as a 3rd Semester Academic Project<h2>
 
 Overview
 
