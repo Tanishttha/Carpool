@@ -73,48 +73,6 @@ The platform enables users to register as drivers or passengers, search for avai
 
 * Vercel
 
-System Architecture
-
-┌─────────────────────────┐
-│         User            │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│      Web Interface      │
-│  HTML • CSS • JS        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│   Authentication Layer  │
-│ Login & Registration    │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│   Ride Management       │
-│ Offer / Find Rides      │
-└────────────┬────────────┘
-             │
-      ┌──────┴──────┐
-      ▼             ▼
-┌──────────┐   ┌──────────┐
-│ Driver   │   │Passenger │
-│ Module   │   │ Module   │
-└────┬─────┘   └────┬─────┘
-     │              │
-     └──────┬───────┘
-            ▼
-┌─────────────────────────┐
-│ Communication & Booking │
-└────────────┬────────────┘
-             ▼
-┌─────────────────────────┐
-│ Payment & Confirmation  │
-└─────────────────────────┘
-
-⸻
 
 Project Structure
 
@@ -150,61 +108,41 @@ carpool
 │   └── other assets
 │
 └── README.md
+<h2>Installation</h2>
+<h3>Clone Repository</h3>
 
-⸻
-
-Installation
-
-Clone Repository
-
+```bash
 git clone https://github.com/Tanishttha/carpool.git
 cd carpool
+```
+<h3>Run Locally</h3>
+<h4>Open the project directory and launch:</h4>
+<h4>open index.html</h4>
 
-Run Locally
+<h3>Then open:</h3>
 
-Open the project directory and launch:
-
-open index.html
-
-or use:
-
-python3 -m http.server 8000
-
-Then open:
-
+```bash
 http://localhost:8000
+```
+<h2>Modules</h2>
+<h3>Home Module</h3>
 
-⸻
+* Provides an introduction to the platform and navigation to major functionalities.
+* Authentication Module
+* Handles user registration and login operations.
+<h3>Driver Module</h3>
 
-Modules
+* Allows users to register as drivers and offer rides.
+* Passenger Module
+* Enables users to search and request rides.
+<h3>Booking Module</h3>
 
-Home Module
+* Manages ride reservations and confirmations.
+* Payment Module
+* Provides a simulated payment interface for ride transactions.
+<h3>Communication Module</h3>
 
-Provides an introduction to the platform and navigation to major functionalities.
-
-Authentication Module
-
-Handles user registration and login operations.
-
-Driver Module
-
-Allows users to register as drivers and offer rides.
-
-Passenger Module
-
-Enables users to search and request rides.
-
-Booking Module
-
-Manages ride reservations and confirmations.
-
-Payment Module
-
-Provides a simulated payment interface for ride transactions.
-
-Communication Module
-
-Facilitates interaction between drivers and passengers.
+* Facilitates interaction between drivers and passengers.
 <h2>Expected Outcomes</h2>
 
 * Reduced transportation expenses.
