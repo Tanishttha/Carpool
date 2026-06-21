@@ -228,19 +228,12 @@ Future Enhancements
 * Emergency Support Features
 * AI-Based Ride Recommendations
 * Route Optimization Algorithms
-
-⸻
-
-Academic Information
-
-Project Type: Mini Project
+<h2>Academic Information</h2>
+Project Type: Capstone Project
 Semester: 3rd Semester
-Course: Web Development / Software Engineering Fundamentals
+Course: Computer Engineering
 Technology Used: HTML, CSS, JavaScript
 Institution: J.C. Bose University of Science and Technology, YMCA
-
-⸻
-
 <h2>Live Demo</h2>
 
 ```bash
