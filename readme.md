@@ -205,10 +205,7 @@ Provides a simulated payment interface for ride transactions.
 Communication Module
 
 Facilitates interaction between drivers and passengers.
-
-⸻
-
-Expected Outcomes
+<h2>Expected Outcomes</h2>
 
 * Reduced transportation expenses.
 * Improved ride-sharing efficiency.
