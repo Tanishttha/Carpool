@@ -31,7 +31,7 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
-  background-image: url('assets/carpool.jpeg');
+  background-image: url('../assets/carpool.jpeg');
   background-size: cover;
   background-position: center;
   filter: blur(5px);
