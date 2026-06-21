@@ -6,7 +6,6 @@
     <title>Carpooling Messenger with Bargain Fare</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f9fafb;
@@ -17,7 +16,6 @@
             margin: 0;
         }
 
-        /* Main Container */
         .container {
             width: 100%;
             max-width: 600px;
@@ -29,7 +27,6 @@
             animation: fadeInUp 1s ease-in-out;
         }
 
-        /* Header */
         .header {
             background-color: #4CAF50;
             color: white;
@@ -40,7 +37,6 @@
             border-radius: 15px 15px 0 0;
         }
 
-        /* Chat Area */
         .chat-container {
             flex-grow: 1;
             padding: 20px;
@@ -52,7 +48,6 @@
             padding-right: 10px;
         }
 
-        /* Message Styles */
         .chat-message {
             padding: 12px 18px;
             border-radius: 25px;
@@ -97,7 +92,6 @@
             color: #34d399;
         }
 
-        /* Input and Send Button */
         .input-container {
             padding: 15px;
             display: flex;
@@ -135,7 +129,6 @@
             transform: scale(1.1);
         }
 
-        /* Bargain Section */
         .bargain-section {
             margin-top: 20px;
             padding: 15px;
@@ -163,7 +156,6 @@
             background-color: #4CAF50;
         }
 
-        /* Notification Animation */
         @keyframes fadeInUp {
             0% {
                 opacity: 0;
@@ -192,22 +184,17 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <div class="header">Carpooling Messenger</div>
 
-        <!-- Chat Area -->
         <div class="chat-container" id="chatContainer">
-            <!-- Messages will appear here -->
         </div>
 
-        <!-- Bargain Fare Section -->
         <div class="bargain-section">
             <label for="bargainInput">Propose a Fare:</label>
             <input type="number" id="bargainInput" placeholder="Enter fare">
             <button onclick="bargainFare()">Propose Fare</button>
         </div>
 
-        <!-- Input Area -->
         <div class="input-container">
             <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." onkeyup="sendMessage(event)">
             <button class="send-button" onclick="sendMessage()">Send</button>
@@ -215,34 +202,28 @@
     </div>
 
     <script>
-        let isRider = true;  // Assume the user is the rider for now
+        let isRider = true;  
         let messages = [];
-        let driverOnline = true; // Simulating driver status (online or offline)
-        let currentFare = 100; // Initial fare
+        let driverOnline = true; 
+        let currentFare = 100;
         let driverBargainAccepted = false;
 
-        // Function to play sound
         function playSound() {
             let audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
             audio.play();
         }
 
-        // Function to send message
         function sendMessage(event) {
             if (event && event.key !== 'Enter') return;
 
             const messageText = document.getElementById('messageInput').value.trim();
             if (!messageText) return;
-
-            // Add message to messages array with sent status
             messages.push({
                 text: messageText,
                 sender: isRider ? 'rider' : 'driver',
                 status: 'sent',
                 readStatus: 'unread'
             });
-
-            // Switch the sender for next message
             isRider = !isRider;
 
             document.getElementById('messageInput').value = '';
@@ -250,30 +231,26 @@
             playSound();
         }
 
-        // Function to render chat messages
         function renderMessages() {
             const chatContainer = document.getElementById('chatContainer');
-            chatContainer.innerHTML = ''; // Clear existing messages
+            chatContainer.innerHTML = ''; 
 
             messages.forEach((msg, index) => {
                 const messageElement = document.createElement('div');
                 messageElement.classList.add('chat-message', msg.sender);
 
-                // Display message text
                 messageElement.textContent = msg.text;
 
-                // Add status
                 const statusElement = document.createElement('div');
                 statusElement.classList.add('status');
                 if (msg.status === 'sent') {
                     statusElement.textContent = 'Sent';
                     statusElement.classList.add('sent');
-                    // Simulate message read after some time
                     setTimeout(() => {
                         msg.status = 'read';
                         msg.readStatus = 'read';
                         renderMessages();
-                    }, 2000); // 2 seconds for message to be read
+                    }, 2000); 
                 }
 
                 if (msg.readStatus === 'read') {
@@ -281,7 +258,6 @@
                     statusElement.classList.add('read');
                 }
 
-                // Show driver online/offline status
                 if (msg.sender === 'driver') {
                     const onlineStatus = driverOnline ? 'online' : 'offline';
                     const onlineElement = document.createElement('div');
@@ -294,11 +270,9 @@
                 chatContainer.appendChild(messageElement);
             });
 
-            // Scroll to the latest message
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
-        // Function for fare bargaining
         function bargainFare() {
             const proposedFare = parseInt(document.getElementById('bargainInput').value);
             if (isNaN(proposedFare)) {
@@ -324,7 +298,6 @@
             }
         }
 
-        // Initial render
         renderMessages();
     </script>
 </body>
