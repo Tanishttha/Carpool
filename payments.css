@@ -10,19 +10,18 @@
     text-transform: capitalize;
     transition: all 0.2s linear;
 }
-/* UPI Section Styling */
 .upi-section {
     margin-top: 30px;
-    padding: 15px; /* Adjusted for a slimmer white border */
-    width: 75%; /* Reduce overall width */
-    max-width: 700px; /* Ensure it doesn't grow too wide */
+    padding: 15px; 
+    width: 75%;
+    max-width: 700px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 
@@ -35,10 +34,10 @@
 
 .upi-options {
     display: flex;
-    justify-content: center; /* Center the options horizontally */
+    justify-content: center; 
     gap: 20px;
     margin-top: 10px;
-    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    flex-wrap: wrap;
 }
 
 .upi-option {
@@ -46,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 120px; /* Reduced width */
+    width: 120px;
     background: linear-gradient(145deg, #f0f0f0, #ffffff);
     padding: 15px;
     border: 2px solid transparent;
@@ -74,7 +73,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #333;
-    text-align: center; /* Ensure text aligns for smaller widths */
+    text-align: center; 
     cursor: pointer;
 }
 
