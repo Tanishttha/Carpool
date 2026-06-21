@@ -25,8 +25,6 @@
             text-align: center;
             margin-bottom: 40px;
         }
-
-        /* Blinking Notification */
         .notification {
             animation: blink 1.5s infinite alternate;
             background-color: #ffcc00;
@@ -108,8 +106,6 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
-
-        /* Animation for fading in cards */
         .card {
             opacity: 0;
             animation: fadeIn 0.6s forwards;
@@ -125,7 +121,6 @@
 <body>
 
 <div class="container py-10">
-    <!-- Notification -->
     <div class="notification">
         New ride requests! Check available bookings.
     </div>
@@ -133,7 +128,6 @@
     <h1>Driver - View Booked Rides</h1>
 
     <div class="grid">
-        <!-- Card 1 -->
         <div class="card p-6">
             <h2 class="card-header">Booking #001</h2>
             <div class="rider-info">
@@ -147,8 +141,6 @@
                 <a href="requests.html?booking=001" class="btn">View Details</a>
             </div>
         </div>
-
-        <!-- Card 2 -->
         <div class="card p-6">
             <h2 class="card-header">Booking #002</h2>
             <div class="rider-info">
@@ -162,8 +154,6 @@
                 <a href="requests.html?booking=002" class="btn">View Details</a>
             </div>
         </div>
-
-        <!-- Card 3 -->
         <div class="card p-6">
             <h2 class="card-header">Booking #003</h2>
             <div class="rider-info">
