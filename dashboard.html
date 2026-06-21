@@ -19,8 +19,6 @@
             50% { background: linear-gradient(135deg, #00a8ff, #00b894); }
             100% { background: linear-gradient(135deg, #00b894, #00a8ff); }
         }
-
-        /* Header styling */
 .header {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -30,34 +28,24 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     color: white;
 }
-
-/* Logo Container */
 .header .logo-container {
     display: flex;
     align-items: center;
 }
-
-/* Logo Image */
 .header .logo img {
     width: 150px;
 }
-
-/* University Name */
 .header .university-name {
     margin-left: 15px;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
 }
-
-/* Menu Styling */
 .header .menu {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adds spacing between menu items */
+    gap: 20px; 
 }
-
-/* Menu Links */
 .header .menu a {
     font-weight: bold;
     text-decoration: none;
@@ -69,27 +57,18 @@
     background-color: #00a8ff;
 
 }
-
-/* Hover effect for Menu Links */
 .header .menu a:hover {
     transform: scale(1.1);
 }
-
-/* Prevent background color change when the link is clicked */
 .header .menu a:active {
     background-color: transparent; /* Keeps background static */
     transform: scale(1); /* Prevents the scale effect on click */
 }
-
-
-/* Emergency Button Container */
 .emergency-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* Emergency Button Styling */
 .emergency-button {
     display: flex;
     align-items: center;
@@ -104,38 +83,28 @@
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     outline: none;
 }
-
-/* Emergency Icon */
 .emergency-icon {
     font-size: 2rem;
     margin-right: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for button */
 .emergency-button:hover {
     background-color: #e63e3e;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 71, 71, 0.5);
 }
 
-/* Hover effect for the icon */
 .emergency-button:hover .emergency-icon {
     transform: scale(1.2) rotate(360deg);
     color: #fff;
 }
-
-/* Button click animation */
 .emergency-button:active {
     transform: scale(0.95) rotate(10deg);
     box-shadow: 0 0 20px rgba(255, 71, 71, 0.7);
 }
-
-/* Import FontAwesome for the icon */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-
-        /* Main image section */
         .bg-image {
             background-image: url('students.jpg');
             background-size: cover;
@@ -145,7 +114,6 @@
             overflow: hidden;
         }
 
-        /* Welcome section styling */
         .welcome-section {
             background: linear-gradient(135deg, #00b894, #00a8ff);
             padding: 40px 0;
@@ -228,7 +196,7 @@
     transition: all 0.3s ease, background-color 0.5s ease;
     box-shadow: 0 4px 10px rgba(0, 168, 255, 0.4); /* Soft glow effect */
     position: relative;
-    overflow: hidden; /* To contain hover effects */
+    overflow: hidden; 
 }
 
 .passenger-dashboard .btn::before {
@@ -246,18 +214,16 @@
 
 .passenger-dashboard .btn:hover::before {
     opacity: 1;
-    transform: scale(1.5); /* Expanding radial effect */
+    transform: scale(1.5); 
 }
 
 .passenger-dashboard .btn:hover {
-    background: linear-gradient(45deg, #005eff, #00a8ff); /* Reverse gradient */
+    background: linear-gradient(45deg, #005eff, #00a8ff); 
     color: white;
-    transform: scale(1.1); /* Slight enlargement on hover */
-    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.5); /* Enhanced glow on hover */
-    animation: glow 1s infinite alternate; /* Subtle glowing animation */
+    transform: scale(1.1); 
+    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.5); 
+    animation: glow 1s infinite alternate; 
 }
-
-/* Glow animation */
 @keyframes glow {
     0% {
         box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
@@ -266,40 +232,34 @@
         box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
     }
 }
-
-/* Additional hover effect for text pop */
 .passenger-dashboard .btn:hover span {
     display: inline-block;
-    transform: translateY(-3px); /* Slight pop-up text effect */
+    transform: translateY(-3px);
     transition: transform 0.3s ease-in-out;
 }
-
-/* Button active click effect */
 .passenger-dashboard .btn:active {
-    transform: scale(0.98); /* Shrink slightly on click */
-    box-shadow: 0 2px 8px rgba(0, 168, 255, 0.3); /* Reduced shadow for pressed effect */
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 168, 255, 0.3); 
 }
 
 .input-box {
     display: flex;
     align-items: center;
-    background: #ffffff; /* White background */
-    border-radius: 12px; /* Smooth rounded corners */
+    background: #ffffff; 
+    border-radius: 12px; 
     padding: 14px 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    border: 1px solid #d1d5db; /* Light gray border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #d1d5db;
     transition: all 0.3s ease-in-out;
-    position: relative; /* For internal animations */
-    overflow: hidden; /* Hide overflow for animation */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .input-box:hover {
-    border-color: #3b82f6; /* Blue border on hover */
-    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.2); /* Slight blue glow */
-    transform: translateY(-2px); /* Subtle lift effect */
+    border-color: #3b82f6; 
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.2); 
+    transform: translateY(-2px); 
 }
-
-/* Add background glow effect */
 .input-box::before {
     content: "";
     position: absolute;
@@ -320,14 +280,14 @@
 .input-icon {
     margin-right: 12px;
     font-size: 18px;
-    color: #9ca3af; /* Icon color */
+    color: #9ca3af; 
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    z-index: 1; /* Ensure it's above the glow effect */
+    z-index: 1; 
 }
 
 .input-box:hover .input-icon {
-    color: #3b82f6; /* Blue icon color on hover */
-    transform: rotate(10deg); /* Add a slight rotation effect */
+    color: #3b82f6; 
+    transform: rotate(10deg); 
 }
 
 .input-select {
@@ -337,15 +297,13 @@
     outline: none;
     font-size: 16px;
     font-weight: 500;
-    color: #374151; /* Dark text */
-    z-index: 1; /* Ensure above the background effect */
+    color: #374151; 
+    z-index: 1; 
 }
 
 .input-select::placeholder {
-    color: #9ca3af; /* Placeholder color */
+    color: #9ca3af; 
 }
-
-/* Animation for the text appearing */
 .input-select:focus {
     animation: focus-pulse 0.6s ease-in-out;
 }
@@ -359,7 +317,6 @@
     }
 }
 
-/* Button Styling */
 .btn {
     padding: 15px 30px;
     font-size: 18px;
@@ -376,7 +333,6 @@
     background-color: #45a049;
 }
 
-/* Wrapper for loading circle and text */
 #loading-wrapper {
     display: none;
     position: absolute;
@@ -388,22 +344,19 @@
     align-items: center;
     text-align: center;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
-/* 3D Loading Circle Styling */
 .loading-circle {
-    width: 300px; /* Increased size of the circle */
-    height: 300px; /* Increased size of the circle */
+    width: 300px; 
+    height: 300px; 
     border-radius: 50%;
     background: conic-gradient(#ff6f61, #ffbb33, #4caf50, #00bcd4, #ff6f61);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.2);
     animation: rotate 4s linear infinite, scaleUp 4s ease-out infinite, colorChange 4s linear infinite;
-    transform-style: preserve-3d; /* To maintain 3D transformations */
+    transform-style: preserve-3d; 
     transition: transform 1s ease-out;
 }
-
-/* Keyframes for rotation (360-degree rotation on Y and X axis) */
 @keyframes rotate {
     0% {
         transform: rotateY(0deg) rotateX(0deg);
@@ -415,8 +368,6 @@
         transform: rotateY(360deg) rotateX(360deg);
     }
 }
-
-/* Keyframes for scaling (expansion and contraction) */
 @keyframes scaleUp {
     0% {
         transform: scale(1);
@@ -428,8 +379,6 @@
         transform: scale(1);
     }
 }
-
-/* Keyframes for color change (smooth gradient color transition) */
 @keyframes colorChange {
     0% {
         background: conic-gradient(#ff6f61, #ffbb33, #4caf50, #00bcd4, #ff6f61);
@@ -447,17 +396,13 @@
         background: conic-gradient(#ff6f61, #ffbb33, #4caf50, #00bcd4, #ff6f61);
     }
 }
-
-/* Text styling for loading text */
 #loading-text {
-    font-size: 30px; /* Increased font size */
+    font-size: 30px; 
     color: white;
-    font-weight: bold; /* Made the text bold */
+    font-weight: bold; 
     margin-top: 30px;
     animation: fadeInText 4s ease-in-out;
 }
-
-/* Fade-in animation for loading text */
 @keyframes fadeInText {
     0% {
         opacity: 0;
@@ -466,8 +411,6 @@
         opacity: 1;
     }
 }
-
-        /* Driver Dashboard Styling */
         .driver-dashboard {
             display: flex;
             flex-direction: column;
@@ -530,8 +473,6 @@
             border-color: #3b82f6;
             box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
         }
-
-        /* Smooth Transitions */
         .transition-all {
             transition: all 0.3s ease;
         }
@@ -547,7 +488,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 40px; /* Increase horizontal padding to make the button wider */
+    padding: 12px 40px;
     font-size: 18px;
     color: white;
     background-color: #4CAF50;
@@ -555,11 +496,11 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: auto; /* Allows button to expand horizontally */
+    width: auto; 
 }
 
 .alerts-button i {
-    margin-right: 10px; /* Spacing between icon and text */
+    margin-right: 10px; 
 }
 
 .alerts-button:hover {
@@ -573,7 +514,7 @@
 
         .why-carpooling-heading {
     font-size: 3rem;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
     text-align: center;
     margin: 40px 0;
     text-transform: uppercase;
@@ -632,7 +573,6 @@
             bottom: 15px;
             font-size: 0.9em;
         }
-        /* Footer styling */
 .footer {
     background-color: #333;
     padding: 20px 0;
@@ -655,8 +595,6 @@
     transform: translateY(-10px) rotate(10deg);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-/* 3D animation effect */
 .social-icon.fb-icon {
     animation: rotate3d 1s infinite alternate;
 }
@@ -686,13 +624,10 @@ footer p {
     text-align: center;
 }
 
-/* More subtle hover effect for copyright text */
 footer p:hover {
     color: white;
     transition: color 0.3s ease;
 }
-
-/* Adding smooth transition for social icons and hover effect */
 @keyframes rotate3d {
     0% {
         transform: rotate(0deg);
@@ -721,7 +656,7 @@ footer p:hover {
     </div>
     <div class="alerts-button-container">
         <button id="alertsButton" class="alerts-button">
-            <i class="fas fa-cloud-sun-rain"></i> <!-- Icon representing weather and traffic -->
+            <i class="fas fa-cloud-sun-rain"></i> 
             Alerts
         </button>
     </div>
@@ -735,10 +670,8 @@ footer p:hover {
     </div>
 </header>
 
-<!-- Main Image Section -->
 <section class="bg-image"></section>
 
-<!-- Welcome Section -->
 <section class="welcome-section">
     <div class="text-center">
         <h1>Welcome to University Carpooling</h1>
@@ -752,15 +685,12 @@ footer p:hover {
 
 <main class="container mx-auto p-6">
 
-    <!-- Passenger Dashboard -->
     <section id="passenger-dashboard" class="passenger-dashboard">
         <img src="wait.jpg" alt="Passenger Waiting">
         <h2>Passenger Dashboard</h2>
     
 
-    <!-- Form Section -->
     <div class="mt-10 bg-white p-8 rounded-lg shadow-xl w-96">
-        <!-- Enter Location -->
         <div class="mb-6">
             <div class="input-box">
                 <span class="input-icon">📍</span>
@@ -776,7 +706,6 @@ footer p:hover {
             </div>
         </div>
         
-        <!-- Enter Destination -->
         <div class="mb-6">
             <div class="input-box">
                 <span class="input-icon">🎯</span>
@@ -794,7 +723,6 @@ footer p:hover {
     
         <button class="btn" onclick="startSearch()">Search Ride</button>
 
-        <!-- Loading animation -->
         <div id="loading-wrapper">
             <div id="loading" class="loading-circle"></div>
             <div id="loading-text">Finding nearby rides...</div>
@@ -803,7 +731,6 @@ footer p:hover {
         <button class="btn" onclick="window.location.href='payments.html'">Make Payments</button>
     </section>
 
-    <!-- Driver Dashboard -->
     <section id="driver-dashboard" class="driver-dashboard">
         <img src="driver.jpg" alt="Driver Dashboard Image">
         <h2>Driver Dashboard</h2>
@@ -812,13 +739,9 @@ footer p:hover {
         <button class="btn" onclick="window.location.href='message_driver.html'">Chat with Rider</button>
     </section>
 
-
-    <!-- Why Carpooling Heading -->
     <section class="why-carpooling-section">
         <h2 class="why-carpooling-heading">Why Carpooling?</h2>
     </section>
-
-    <!-- Benefits Section -->
     <section class="fact-box-container">
         <div class="fact-box">
             <h3>Affordable and Convenient</h3>
@@ -857,8 +780,6 @@ footer p:hover {
             <button onclick="toggleContent(this)">Read More</button>
         </div>
     </section>
-
-    <!-- Footer Section -->
     <footer class="footer py-10 bg-gray-900 text-white">
         <div class="container mx-auto text-center">
             <h3 class="text-2xl mb-6">Connect with us</h3>
@@ -892,16 +813,13 @@ footer p:hover {
         factBox.classList.toggle('open');
     }
     function startSearch() {
-    // Show the loading animation and text
     document.getElementById("loading-wrapper").style.display = "flex";
-
-    // After 4 seconds, redirect to the find_ride.html page
     setTimeout(function() {
         window.location.href = 'find_ride.html';
-    }, 3000);  // Adjusted to 4 seconds to match the loading animation duration
+    }, 3000);  
 }
 document.getElementById('alertsButton').addEventListener('click', function() {
-            window.location.href = 'traffic.html';  // Redirect to traffic and weather alerts page
+            window.location.href = 'traffic.html'; 
         });
 
     
