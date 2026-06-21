@@ -74,40 +74,7 @@ The platform enables users to register as drivers or passengers, search for avai
 * Vercel
 
 
-Project Structure
-
-carpool
-│
-├── index.html
-├── home.html
-├── login.html
-├── register.html
-├── dashboard.html
-├── bookings.html
-├── find_ride.html
-├── offer_ride.html
-├── requests.html
-├── rider.html
-├── traffic.html
-├── payments.html
-│
-├── login_style.css
-├── register_style.css
-├── payments.css
-│
-├── login_script.js
-├── register_script.js
-├── dashboard_script.js
-├── payments.js
-│
-├── images
-│   ├── carpool.jpeg
-│   ├── driver.jpg
-│   ├── passenger.jpg
-│   ├── students.jpg
-│   └── other assets
-│
-└── README.md
+![Project Structure](assets/2.png)
 <h2>Installation</h2>
 <h3>Clone Repository</h3>
 
