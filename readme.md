@@ -73,8 +73,7 @@ The platform enables users to register as drivers or passengers, search for avai
 <h3>Deployment</h3>
 
 * Vercel
-
-
+<br>
 ![Project Structure](assets/2.png)
 <h2>Installation</h2>
 <h3>Clone Repository</h3>
