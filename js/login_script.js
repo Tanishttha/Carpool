@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (storedUser) {
         
         if (email === storedUser.email && password === storedUser.password) {
-        window.location.href = 'dashboard.html';
+        window.location.href = 'html/dashboard.html';
         } else {
         
             document.getElementById('error-message').textContent = 'Invalid email or password. Please try again.';
